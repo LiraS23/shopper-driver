@@ -2,6 +2,7 @@ import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { DriverModule } from './driver/driver.module';
 import { AvaliacaoModule } from './driver/avaliacao.module';
+import { GoogleMapsModule } from './routesAPI/google-maps.modules';
 
 @Module({
   imports: [
@@ -18,6 +19,7 @@ import { AvaliacaoModule } from './driver/avaliacao.module';
     }),
     DriverModule,
     AvaliacaoModule,
+    GoogleMapsModule,
   ],
 })
 export class AppModule {}
